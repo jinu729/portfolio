@@ -1,0 +1,30 @@
+@keyframes ani{
+    0%{
+        /* stroke-dasharray: 777; */
+        stroke-dashoffset: 295;
+    }
+    100%{
+        /* stroke-dasharray: 777; */
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes ani2{
+    0%{
+        /* stroke-dasharray: 777; */
+        stroke-dashoffset: 336;
+    }
+    100%{
+        /* stroke-dasharray: 777; */
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes ani3{
+    0%{
+        /* stroke-dasharray: 777; */
+        stroke-dashoffset: 378;
+    }
+    100%{
+        /* stroke-dasharray: 777; */
+        stroke-dashoffset: 0;
+    }
+}
