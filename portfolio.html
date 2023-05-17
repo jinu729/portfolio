@@ -8,29 +8,32 @@
     <script src="./js/jquery-3.6.4.js"></script>
     <script src="./js/jquery-ui.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/jquery.mousewheel.min.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animation.css">
+    <link rel="shortcut icon" href="./images/main/banner_icon.png" type="image/x-icon">
 </head>
 <body>
     <div class="wrap">
-        <div class="page">
+        <div class="page" id="page1">
             <div class="home" id="home">
                 <header style="opacity: 1;">
                     <ul>
-                        <li>
+                        <li class="gnb">
                             <a href="#home">Home</a>
                         </li>
-                        <li>
+                        <li class="gnb">
                             <a href="#aboutme">About</a>    
                         </li>
-                        <li>
+                        <li class="gnb">
                             <a href="#skill">Skill</a>
                         </li>
-                        <li>
+                        <li class="gnb">
                             <a href="#work">Work</a>
                         </li>
-                        <li>
+                        <li class="gnb">
                             <a href="#contact">Contact</a>
                         </li>
                     </ul>
@@ -38,15 +41,15 @@
                 <h1 class="title">portfolio</h1>
             </div>
         </div>
-        <div class="page">
+        <div class="page" id="page2">
             <div class="aboutme" id="aboutme">
                 <section>
-                    <div class="left_box">
+                    <div class="left_box move1">
                         <div class="img_box">
                             <img src="./images/cat-7954262__340.webp" alt="">
                         </div>
                     </div>
-                    <div class="right_box">
+                    <div class="right_box move2">
                         <div class="about">
                             <h2>About Me</h2><br>
                             <ul>
@@ -103,7 +106,7 @@
                 </section>
             </div>
         </div>
-        <div class="page">
+        <div class="page" id="page3">
             <div class="skill" id="skill">
                 <section>
                     <h2>SKILL</h2>
@@ -189,87 +192,123 @@
                 </section>
             </div>
         </div>
-        <div class="page">
+        <div class="page" id="page4">
             <div class="work" id="work">
                 <section>
                     <h2>WORK</h2>
                     <p class="btnleft">
-                        <img src="./images/chevron-left-solid-white.png" alt="left">
+                        <img src="./images/chevron-left-solid-black.png" alt="left">
                     </p>
                     <p class="btnright">
-                        <img src="./images/chevron-right-solid-white.png" alt="right">
+                        <img src="./images/chevron-right-solid-black.png" alt="right">
                     </p>
-                    <div class="slide_wrap">
-                        <div class="slide1 slide">
-                            <div class="inner">
-                                <p>
-                                    <a href="#">
-                                        
-                                    </a>
-                                </p>
-                                <span>
-                                    #작업물1<br>
-                                    #제작기간<br>
-                                </span>
-                            </div>
-                        </div>  
-                        <div class="slide2 slide">
-                            <div class="inner">
-                                <p>
-                                    <a href="#">
-                                        
-                                    </a>
-                                </p>
-                                <span>
-                                    #작업물2<br>
-                                    #제작기간<br>
-                                </span>
-                            </div>
-                        </div>  
-                        <div class="slide3 slide">
-                            <div class="inner">
-                                <p>
-                                    <a href="https://jinu729.github.io/osulloc/" target="_blank">
-                                        z
-                                    </a>
-                                </p>
-                                <span>
-                                    #작업물3<br>
-                                    #제작기간<br>
-                                </span>
-                            </div>
-                        </div>  
-                        <div class="slide4 slide">
-                            <div class="inner">
-                                <p>
-                                    <a href="#">
-                                        
-                                    </a>
-                                </p>
-                                <span>
-                                    #작업물4<br>
-                                    #제작기간<br>
-                                </span>
-                            </div>
-                        </div>  
-                        <div class="slide5 slide">
-                            <div class="inner">
-                                <p>
-                                    <a href="#">
-                                        
-                                    </a>
-                                </p>
-                                <span>
-                                    #작업물5<br>
-                                    #제작기간<br>
-                                </span>
-                            </div>
-                        </div>  
+                    <div class="hidden">
+                        <div class="slide_wrap">
+                            <div class="slide1 slide">
+                                <div class="inner">
+                                    <p>
+                                        <a href="#">
+                                            <img src="./images/su.jpg" alt="su">
+                                        </a>
+                                    </p>
+                                    <span>
+                                        #작업물1<br>
+                                        #제작기간<br>
+                                        #제작기간<br>
+                                    </span>
+                                </div>
+                            </div>  
+                            <div class="slide2 slide">
+                                <div class="inner">
+                                    <p>
+                                        <a href="#">
+                                            <img src="./images/trip.jpg" alt="trip">
+                                        </a>
+                                    </p>
+                                    <span>
+                                        #작업물2<br>
+                                        #제작기간<br>
+                                        #제작기간<br>
+                                    </span>
+                                </div>
+                            </div>  
+                            <div class="slide3 slide">
+                                <div class="inner">
+                                    <p>
+                                        <a href="https://jinu729.github.io/osulloc/" target="_blank">
+                                            <img src="./images/os2.jpg" alt="os">
+                                        </a>
+                                    </p>
+                                    <span>
+                                        #오설록<br>
+                                        #퍼블리싱 100%<br>
+                                        #7일<br>
+                                    </span>
+                                </div>
+                            </div>  
+                            <div class="slide4 slide">
+                                <div class="inner">
+                                    <p>
+                                        <a href="#">
+                                            <img src="./images/ne.jpg" alt="netflix">
+                                        </a>
+                                    </p>
+                                    <span>
+                                        #작업물4<br>
+                                        #제작기간<br>
+                                        #제작기간<br>
+                                    </span>
+                                </div>
+                            </div>  
+                            <div class="slide5 slide">
+                                <div class="inner">
+                                    <p>
+                                        <a href="#">
+                                            <img src="./images/dun.jpg" alt="dunkin">
+                                        </a>
+                                    </p>
+                                    <span>
+                                        #작업물5<br>
+                                        #제작기간<br>
+                                        #제작기간<br>
+                                    </span>
+                                </div>
+                            </div>  
+                            <div class="slide6 slide">
+                                <div class="inner">
+                                    <p>
+                                        <a href="#">
+                                            <img src="./images/hotel.jpg" alt="hotel">
+                                        </a>
+                                    </p>
+                                    <span>
+                                        #작업물6<br>
+                                        #제작기간<br>
+                                        #제작기간<br>
+                                    </span>
+                                </div>
+                            </div>  
+                            <div class="slide7 slide">
+                                <div class="inner">
+                                    <p>
+                                        <a href="#">
+                                            
+                                        </a>
+                                    </p>
+                                    <span>
+                                        #작업물7<br>
+                                        #제작기간<br>
+                                        #제작기간<br>
+                                    </span>
+                                </div>
+                            </div>  
+                        </div>
                     </div>
+                    
                 </section>
             </div>
         </div>
-        <div class="page">
+        <div class="page" id="page5">
             <div class="contact" id="contact">
                
                 <section>
@@ -277,12 +316,13 @@
                     <p>지금까지 제 포트폴리오를 봐주셔서 감사합니다.<br>
                         010-6271-2663	/	timytunner@gmail.com</p>
                 </section>
-                <footer>
+                <div class="footer">
                     <p>본 페이지는 상업적 목적이 아닌<br>
                         개인 포트폴리오용으로 제작되었습니다.<br>
                         2023 Copyright Jinwoo Jeong. All rights reserved.
                     </p>
-                </footer>
+                </div>
+               
             </div>
         </div>
     </div>

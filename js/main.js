@@ -33,7 +33,7 @@ $(function(){
         });
     })
     $('#work .btnright').click(function(){
-        console.log(flag);
+        // console.log(flag);
         if(flag == true){
             return;
         }
@@ -52,23 +52,23 @@ $(function(){
     },4000)
 });
 
-var scr2 = $(window).scrollTop();
-$(window).scroll(function(){
-    var scr2 = $(this).scrollTop();
-    // console.log(scr2);
-    if(scr >= 2170){
-        $('#work .slide_wrap').addClass('add');
-    }else{
-        $('#work .slide_wrap').removeClass('add');
-    }
-    // if(scr >= 1774){
-    //     $('.wrap .box .st2').addClass('add2');
-    // }else{
-    //     $('.wrap .box .st2').removeClass('add2');
-    // }
-    // if(scr >= 1774){
-    //     $('.wrap .box .st3').addClass('add3');
-    // }else{
-    //     $('.wrap .box .st3').removeClass('add3');
-    // }
-});
+// var scr2 = $(window).scrollTop();
+// $(window).scroll(function(){
+//     var scr2 = $(this).scrollTop();
+//     console.log(scr2);
+//     if(scr >= 2170){
+//         $('#work .slide_wrap').addClass('add');
+//     }else{
+//         $('#work .slide_wrap').removeClass('add');
+//     }
+//     // if(scr >= 1774){
+//     //     $('.wrap .box .st2').addClass('add2');
+//     // }else{
+//     //     $('.wrap .box .st2').removeClass('add2');
+//     // }
+//     // if(scr >= 1774){
+//     //     $('.wrap .box .st3').addClass('add3');
+//     // }else{
+//     //     $('.wrap .box .st3').removeClass('add3');
+//     // }
+// });
